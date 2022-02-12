@@ -8,10 +8,20 @@ import {
   IonSlide,
 } from "@ionic/react";
 
+import styled from "styled-components";
+
+// import Margin from "../../components/common/Margin";
+
 const slideOpts = {
   initialSlide: 1,
   speed: 400,
 };
+
+const ImageCard = styled.div`
+  width: 10em;
+  height: 10em;
+  background-color: red;
+`;
 
 const Tutorial: React.FC = () => {
   return (
@@ -24,6 +34,8 @@ const Tutorial: React.FC = () => {
       <IonContent fullscreen>
         <IonSlides pager={true} options={slideOpts}>
           <IonSlide>
+            {/* <Margin size="40" /> */}
+            <ImageCard />
             <h1>Tutorial Start</h1>
           </IonSlide>
           <IonSlide>
