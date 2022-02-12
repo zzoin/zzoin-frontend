@@ -5,7 +5,7 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-import Header from "../components/Header/Header";
+import Header from "../components/Header";
 import "./Main.css";
 
 const Main: React.FC = () => {
