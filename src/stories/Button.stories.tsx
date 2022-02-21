@@ -1,15 +1,32 @@
 import React from "react";
-import Button, { ButtonProps } from "../components/common/Button";
-
-import { Story, Meta } from "@storybook/react";
+import styled from "styled-components";
+import Button from "../components/common/Button";
 
 export default {
-  text: "Components/common/Button",
+  title: "Components/common/Button",
   component: Button,
-} as Meta;
+};
 
 export const button = () => {
-  const label = "Butn";
+  return <Button>BUTTON</Button>;
+};
 
-  return <Button>{label}</Button>;
+button.story = {
+  name: "Default",
+};
+
+export const sampleButton = () => {
+  return <Button>sample</Button>;
+};
+
+export const bannerBtn = () => {
+  return <Button theme="banner">BANNER</Button>;
+};
+
+export const searchBtn = () => {
+  return <Button theme="search">SEARCH</Button>;
+};
+
+export const keywordBtn = () => {
+  return <Button theme="keyword">KEYWORD</Button>;
 };
