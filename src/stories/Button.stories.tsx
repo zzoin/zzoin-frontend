@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import Button from "../components/common/Button";
 
 export default {
@@ -8,7 +7,7 @@ export default {
 };
 
 export const button = () => {
-  return <Button>BUTTON</Button>;
+  return <Button text="BUTTON" />;
 };
 
 button.story = {
@@ -16,17 +15,18 @@ button.story = {
 };
 
 export const sampleButton = () => {
-  return <Button>sample</Button>;
+  return <Button text="sample" />;
 };
 
 export const bannerBtn = () => {
-  return <Button theme="banner">BANNER</Button>;
+  // return <Button text="BANNER" theme="banner" height="4rem" width="30rem" />;
+  return <Button text="BANNER" theme="banner" />;
 };
 
 export const searchBtn = () => {
-  return <Button theme="search">SEARCH</Button>;
+  return <Button text="SEARCH" theme="search" />;
 };
 
 export const keywordBtn = () => {
-  return <Button theme="keyword">KEYWORD</Button>;
+  return <Button text="KEYWORD" theme="keyword" />;
 };
