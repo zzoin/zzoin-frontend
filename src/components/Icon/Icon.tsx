@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
+import { icons } from "./Icons";
 
 export interface IconProps {
   theme: "main" | "keyword";
@@ -13,8 +14,8 @@ const Icon = ({ theme, height, width }: IconProps) => {
 
 Icon.defaultProps = {
   theme: "main",
-  height: "1rem",
-  width: "1rem",
+  height: "3rem",
+  width: "3rem",
 };
 
 const StyledIcon = styled.div<{
